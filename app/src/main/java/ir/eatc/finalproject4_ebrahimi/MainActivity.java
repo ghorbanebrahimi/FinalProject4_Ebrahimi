@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
               //   txttst.setText("Hi");
              }
              if (chkShahr.isChecked()){
-                 choice= "shahr";
+                 choice="shahr";
              }
 
 
              Intent i=new Intent(MainActivity.this,FormActivity.class);
-             i.putExtra("entekhab" ,choice);
+             i.putExtra("entekhab",choice);
              startActivityForResult(i,1);
          }
      });
